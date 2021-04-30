@@ -1,0 +1,21 @@
+name: 'Slack Send Message'
+description: 'Send message to Slack'
+inputs:
+  SLACK_WEBHOOK:  
+    description: 'Slack Webhook Url'
+    required: true
+    default: ''
+  TITLE: 
+    description: 'Message Header'
+    required: false
+    default: ''
+  BODY:  
+    description: 'Message body'
+    required: true
+    default: ''
+runs:
+  using: 'node12'
+  main: 'index.js'
+branding:
+  icon: 'cast'  
+  color: 'blue'
