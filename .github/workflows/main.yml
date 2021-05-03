@@ -12,19 +12,4 @@ jobs:
         with:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           TITLE: 'Test Title'
-          BODY: '[
-            {
-              "header":"Left Side Text",
-              "body":"this text confined to the left side of the message.",
-              "wrapField": "false"
-            },
-            {
-              "header":"Right Side Text",
-              "body":"this text is confined to the right side of the message.",
-              "accessory": {
-                "type":"image",
-                "src": "https://i.etsystatic.com/20369072/r/il/3cd5b9/2041752012/il_794xN.2041752012_78gb.jpg",
-                "alt": "pug"
-              }
-            }
-          ]' 
+          BODY: '[{"header":"Left Side Text","body":"this text confined to the left side of the message.","wrapField": "false"},{"header":"Right Side Text","body":"this text is confined to the right side of the message.","accessory": {"type":"image","src": "https://i.etsystatic.com/20369072/r/il/3cd5b9/2041752012/il_794xN.2041752012_78gb.jpg","alt": "pug"}}]'
