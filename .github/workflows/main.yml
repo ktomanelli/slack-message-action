@@ -7,7 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     name: Send Test Text To Slack
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - run: npm install
       - uses: ./slack-notify
         with:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
