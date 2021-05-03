@@ -14,8 +14,8 @@ inputs:
     required: true
     default: ''
 runs:
-  using: 'node12'
-  main: 'index.js'
+  using: "docker"
+  image: "Dockerfile"
 branding:
   icon: 'cast'  
   color: 'blue'
