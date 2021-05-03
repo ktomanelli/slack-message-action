@@ -8,7 +8,7 @@ jobs:
     name: Send Test Text To Slack
     steps:
     - name: Send Text
-      uses: ktomanelli/slack-message-action@v1
+      uses: ./
       with:
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
         TITLE: 'Test Title'
