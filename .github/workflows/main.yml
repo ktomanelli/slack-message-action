@@ -16,7 +16,7 @@ jobs:
             {
               "header":"Left Side Text",
               "body":"this text confined to the left side of the message.",
-              "wrapField": false
+              "wrapField": "false"
             },
             {
               "header":"Right Side Text",
