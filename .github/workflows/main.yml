@@ -7,7 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     name: Send Test Text To Slack
     steps:
-      - name: Send Text
       - uses: actions/checkout@v1
       - uses: ./slack-notify
         with:
